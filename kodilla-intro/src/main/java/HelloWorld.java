@@ -1,7 +1,7 @@
 public class HelloWorld {
     public static void main(String[] args)
         System.out.println("Hello World!")
-        System.out.println("Bartosz")
-        System.out.println("20")
-        System.out.println("G")
+                System.out.println("Bartosz")
+            int("20")
+            char("G")
 }
