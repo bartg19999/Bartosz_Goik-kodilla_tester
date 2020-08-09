@@ -8,4 +8,8 @@ include 'MainExtended'
 include 'MainExtended'
 findProject(':MainExtended')?.name = 'mainextended'
 include 'MainExtended'
+include 'DebugExample'
+include 'ifffff'
+include 'if'
+include 'LeapYear'
 
