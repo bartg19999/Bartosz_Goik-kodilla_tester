@@ -12,4 +12,8 @@ include 'DebugExample'
 include 'ifffff'
 include 'if'
 include 'LeapYear'
+include 'Simplearray'
+include 'Loops'
+include 'untitled'
+include 'HelloWorld'
 
