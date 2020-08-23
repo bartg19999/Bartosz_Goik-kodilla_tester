@@ -31,11 +31,11 @@ public class Notebook {
     }
     public void checkYear() {
         if (this.year < 2012) {
-            System.out.println("This notebook is old.");
+            System.out.println("This notebook is old");
         }else if(this.year > 2012 && this.year < 2019) {
             System.out.println("This notebook is quite new.");
         }else{
-            System.out.println("This notebook was released recently.");
+            System.out.println("This notebook is new");
         }
     }
 

@@ -17,4 +17,7 @@ include 'Loops'
 include 'untitled'
 include 'HelloWorld'
 include 'kodilla-intro'
+include 'Zadanie2.4'
+include 'Zadanie2.5'
+include 'Refaktoryzacja'
 
