@@ -14,9 +14,9 @@ public class user {
         user Kamil = new user("Kamil", 29);
         user Dawid = new user("Dawid", 34);
         user Ola = new user("Ola", 47);
-            int sum = 0;
-            for(int i = 0; i < user.length; i++);{
-                sum += user[i];
+            int result = 0;
+            for(int age = 0; age < user.length; age++);{
+                result = result + user.length;
         }
     }
 }
