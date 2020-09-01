@@ -1,9 +1,3 @@
-enum colour{
-    B, /* Blue */
-    G, /* Green */
-    Y, /* Yellow */
-    P, /* Pink */
-}
 public class Colour {
     public static void main(String[]args){
         colour chosenColour = colour.B;
