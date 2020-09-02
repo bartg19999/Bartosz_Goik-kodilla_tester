@@ -5,6 +5,6 @@ public class SimpleArray {
 
             int liczbaelementów = names.length;
 
-        System.out.println("oj tak +1 byczq");
+        System.out.println("");
     }
     }

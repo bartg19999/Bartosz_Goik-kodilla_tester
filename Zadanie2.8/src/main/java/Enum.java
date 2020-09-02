@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
-public class Enum {
+enum colour{
+    B, /* Blue */
+    G, /* Green */
+    Y, /* Yellow */
+    P, /* Pink */
 }

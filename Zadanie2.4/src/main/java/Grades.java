@@ -2,10 +2,14 @@ public class Grades {
     private int[] grades;
     private int size;
 
-    public Grades() {
+    public Grades(int i, int i1) {
         this.grades = new int[10];
         this.size = 0;
     }
+
+    public Grades(int i) {
+    }
+
     public void add(int value) {
         if (this.size == 10) {
             return;

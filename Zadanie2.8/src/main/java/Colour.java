@@ -1,8 +1,8 @@
 public class Colour {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         colour chosenColour = colour.B;
 
-        switch (chosenColour){
+        switch (chosenColour) {
             case B:
                 System.out.println("Blue");
                 break;
@@ -17,6 +17,5 @@ public class Colour {
                 break;
         }
     }
-
-
 }
+
