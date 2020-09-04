@@ -1,4 +1,4 @@
-public class Colour {
+public class Main {
     public static void main(String[] args) {
         colour chosenColour = colour.B;
 
@@ -18,4 +18,3 @@ public class Colour {
         }
     }
 }
-
