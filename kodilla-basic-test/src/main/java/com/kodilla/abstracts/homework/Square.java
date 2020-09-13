@@ -2,11 +2,11 @@ package com.kodilla.abstracts.homework;
 
 public class Square extends Shape {
     public Square(){
-        super(8, 4, 4);
+        super(8, 4);
     }
 
     @Override
     public int getSquareSurfaceArea() {
-        return getSquareSurfaceArea();
+        return a * b;
     }
 }

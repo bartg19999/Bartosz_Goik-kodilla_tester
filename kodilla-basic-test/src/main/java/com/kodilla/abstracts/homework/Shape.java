@@ -1,14 +1,12 @@
 package com.kodilla.abstracts.homework;
 
 public abstract class Shape {
-    private int a;
-    private int b;
-    private int h;
+    public int a;
+    public int b;
 
-    public Shape(int a, int b, int h){
+    public Shape(int a, int b){
         this.a = a;
         this.b = b;
-        this.h = h;
     }
     public int getSquareSurfaceArea(){
         return a * b;
