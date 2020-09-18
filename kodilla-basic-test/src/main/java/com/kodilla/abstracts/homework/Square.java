@@ -6,7 +6,7 @@ public class Square extends Shape {
     }
 
     @Override
-    public int getSquareSurfaceArea() {
-        return a * b;
+    public void getSquareSurfaceArea() {
+        System.out.println(a * b);
     }
 }

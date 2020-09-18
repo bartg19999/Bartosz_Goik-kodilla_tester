@@ -7,7 +7,7 @@ public class Grades {
         this.size = 0;
     }
 
-    public Grades(int i) {
+    public Grades(int i9, int i8, int i7, int i6, int i5, int i4, int i3, int i2, int i1, int i) {
     }
 
     public void add(int value) {

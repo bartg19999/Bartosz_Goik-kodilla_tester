@@ -8,8 +8,8 @@ public abstract class Shape {
         this.a = a;
         this.b = b;
     }
-    public int getSquareSurfaceArea(){
-        return a * b;
+    public void getSquareSurfaceArea(){
+        System.out.println(a * b);
     }
     public int getSquareCircuit(){
         return a + a + b + b;
