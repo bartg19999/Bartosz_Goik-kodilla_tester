@@ -7,6 +7,6 @@ public class Race {
         car.increaseSpeed();
         car.decreaseSpeed();
         car.decreaseSpeed();
-        System.out.println("Speed equals " + car.getSpeed());
+        System.out.println("Speed equals " + car.getSpeed() +" km/h");
     }
 }
