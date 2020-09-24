@@ -1,6 +1,6 @@
 public class Colour {
     public static void main(String[] args) {
-        ColourEnum chosenColour = ColourEnum.B;
+        ColourEnum chosenColour = ColourEnum.Y;
 
         switch (chosenColour) {
             case B:
