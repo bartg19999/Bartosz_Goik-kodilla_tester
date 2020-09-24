@@ -5,6 +5,8 @@ public abstract class Job {
     public int salary;
 
     public Job(String responsibilities, int salary){
+        this.responsibilities = responsibilities;
+        this.salary = salary;
     }
 
     public static String getResponsibilities(){
