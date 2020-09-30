@@ -22,4 +22,16 @@ public class Subaru implements Car {
     public void decreaseSpeed() {
         this.speed = speed - 10;
         }
+
+    @Override
+    public void describeCar() {
+        describeCar();
     }
+
+    @Override
+    public String toString() {
+        return "Subaru{" +
+                "speed=" + speed +
+                '}';
+    }
+}
