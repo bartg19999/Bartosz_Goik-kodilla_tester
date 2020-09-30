@@ -2,14 +2,8 @@ package com.kodilla.abstracts.homework2;
 
 public class Main {
     public static void main(String[] args) {
-        Plumber plumber = new Plumber();
-        Main processor = new Main();
+        Person plumber = new Person("Maciek", new Plumber(), 30);
+        JobProcessor processor = new JobProcessor();
         processor.process(plumber);
-
-    }
-
-
-    private void process(Job job) {
-        System.out.println("Plumber has to " + Plumber.getResponsibilities());
     }
 }
