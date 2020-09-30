@@ -10,9 +10,9 @@ public class SchoolDirectory {
         Principal nowak = new Principal("Tomasz", "Nowak");
         Principal malek = new Principal("Andrzej", "Małek");
 
-        School walczakSchool = new School(7, 423.0);
-        School nowakSchool = new School(18, 389.0);
-        School malekSchool = new School(22, 548.0);
+        School walczakSchool = new School(7, 22.0, 34.0, 28.0, 33.0);
+        School nowakSchool = new School(18, 38.0, 34.0, 25.0);
+        School malekSchool = new School(22, 40.0, 28.0, 33.0, 35.0, 42.0);
 
         schools.put(walczak, walczakSchool);
         schools.put(nowak, nowakSchool);
@@ -21,7 +21,7 @@ public class SchoolDirectory {
         for(Map.Entry<Principal, School> principalEntry : schools.entrySet()) {
             System.out.println(principalEntry.getKey());
             System.out.println("School nr: " + principalEntry.getValue().getSchoolNumber());
-            System.out.println(principalEntry.getValue());
+            System.out.println(principalEntry.getValue().getStudents());
         }
     }
 }
