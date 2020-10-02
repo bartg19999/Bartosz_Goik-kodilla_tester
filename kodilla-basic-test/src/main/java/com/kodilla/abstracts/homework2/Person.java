@@ -11,7 +11,7 @@ public class Person {
         this.age=age;
     }
     public void process(Job job) {
-        System.out.println(job + " has to " + Plumber.getResponsibilities());
+        System.out.println(job + " has to " + job.getResponsibilities());
 
     }
 }
