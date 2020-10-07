@@ -1,31 +1,25 @@
 public class Grades {
     public int[] grades;
-    public int size;
 
     public Grades(){
         this.grades = new int[10];
-        this.size = 0;
-    }
-
-    public Grades(int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9) {
     }
 
     public void add(int value){
-        if (this.size == 10){
+        if (grades.length == 10){
             return;
         }
-        this.grades[this.size] = value;
-        this.size++;
+        this.grades[grades.length] = value;
     }
     public int lastGrade(){
-        int result = this.grades[this.size - 1];
+        int result = this.grades[grades.length - 1];
         return result;
     }
-    public double average (int [] grades){
+    public double average(){
         int sum = 0;
-        for(int i = 0; i < size; i++){
+        for(int i = 0; i < grades.length; i++){
             sum += this.grades[i];
         }
-        return sum / this.size;
+        return sum / grades.length;
     }
 }
