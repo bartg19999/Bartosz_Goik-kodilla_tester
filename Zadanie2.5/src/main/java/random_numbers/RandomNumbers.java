@@ -11,8 +11,6 @@ public class RandomNumbers {
 
         int randomNumber = random.nextInt(31);
 
-        int min;
-        int max = 0;
         int sum = 0;
 
         while (sum <= 5000){
