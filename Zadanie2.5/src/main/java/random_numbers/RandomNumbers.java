@@ -2,8 +2,6 @@ package random_numbers;
 
 import java.util.Random;
 
-
-
 public class RandomNumbers {
     public static void main(String[] args) {
 
@@ -11,17 +9,22 @@ public class RandomNumbers {
 
         int randomNumber = random.nextInt(31);
 
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         int sum = 0;
 
-        while (sum <= 5000){
+        while (sum <= 5000) {
             int n1 = random.nextInt(31);
             sum = sum + n1;
             System.out.println(sum);
-            if (sum < 30){
-                    System.out.println(sum + " - minimum");
-            }else if (sum > 5000){
-                    System.out.println(sum + " - maximum");
-                }
+            if (n1 > max) {
+                max = n1;
+            }
+            if (n1 < min) {
+                min = n1;
             }
         }
+        System.out.println("Minimum - " + min);
+        System.out.println("Maxiumum - " + max);
     }
+}
