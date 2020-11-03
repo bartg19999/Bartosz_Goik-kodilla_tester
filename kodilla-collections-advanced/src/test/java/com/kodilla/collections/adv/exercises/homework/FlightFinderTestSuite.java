@@ -9,17 +9,21 @@ import static org.junit.jupiter.api.Assertions.*;
 class FlightFinderTestSuite {
 
     @Test
-    public void testFindFlightsFrom(String departure, String arrival){
+    public void testFindFlightsFrom(String departure){
         //given
-        FlightFinder flight = new FlightFinder();
+        FlightFinder flightFinder = new FlightFinder();
+        flightFinder.addFlight("Helsinki", "Chicago");;
         //when
-        List<Flight> result = flight.findFlightsFrom(departure);
+        List<Flight> result = flightFinder.findFlightsFrom(departure);
         //then
-        assertEquals();
+        assertEquals("Helsinki", result.toString());
     }
     @Test
-    public void testFindFlightsTo(String departure, String arrival){
+    public void testFindFlightsTo(String arrival){
+        FlightRepository flightRepository = new FlightRepository();
+        FlightRepository.getFlightsTable();
+        //when
+        List<Flight> result =
 
     }
-
 }

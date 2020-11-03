@@ -7,12 +7,12 @@ import java.util.List;
 import java.util.Map;
 
 public class FlightFinder {
-    Map<String, String> flights = new HashMap<>();
+    Map<String, List<Flight>> flights = new HashMap<>();
 
-    public List<Flight> findFlightsFrom(String departure, String arrival){
-        return flights.getOrDefault(List<Flight>, departure);
+    public List<Flight> findFlightsFrom(String departure){
+        return flights.getOrDefault(departure, Collections.emptyList());
     }
     public List<Flight> findFlightsTo(String arrival){
-        return Collections.emptyList();
+        return flights.getOrDefault(arrival, Collections.emptyList());
     }
 }
