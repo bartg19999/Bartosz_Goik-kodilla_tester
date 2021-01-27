@@ -1,17 +1,17 @@
 package com.kodilla.collections.adv.exercises.homework;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class FlightRepository {
-    static Map<String, List<Flight>> flights = new HashMap<>();
 
     public void addFlight(String departure, String arrival){
 
     }
-    public static Map<String, List<Flight>> getFlightsTable(){
+    public static List<Flight> getFlightsTable(){
+        List<Flight> flights = new ArrayList<>();
+        flights.add(new Flight("Warsaw", "Tokyo"));
+        flights.add(new Flight("Toronto", "Warsaw"));
+
         return flights;
     }
 
