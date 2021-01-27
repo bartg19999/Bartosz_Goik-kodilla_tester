@@ -14,7 +14,8 @@ class CashMachineTest {
         cashMachine.add(300);
 
         int[] transactions = cashMachine.getTransactions();
-        assertEquals(150, transactions[0]);
+        assertEquals(3, transactions.length);
+        assertEquals(300, transactions[2]);
     }
 
     @Test
@@ -24,7 +25,7 @@ class CashMachineTest {
         cashMachine.add(-100);
         cashMachine.add(300);
 
-        assertEquals(350, cashMachine.getBalance(), 0.01);
+        assertEquals(350, cashMachine.getBalance());
     }
     @Test
     public void getNumberOfTransactionsTest(){
@@ -33,6 +34,6 @@ class CashMachineTest {
         cashMachine.add(-100);
         cashMachine.add(300);
 
-        assertEquals(3, cashMachine.getNumberOfTransactions(), 0.01);
+        assertEquals(3, cashMachine.getNumberOfTransactions());
     }
 }

@@ -13,6 +13,7 @@ public class Bank {
     public void addRynekTransaction(int transaction){
         this.rynek.add(transaction);
     }
+    public void getRynekDepositsNumber(int transaction)
     public void addPlazaTransaction(int transaction){
         this.plaza.add(transaction);
     }
@@ -21,16 +22,7 @@ public class Bank {
     }
 
     public double getRynekAverageDeposit(int transaction) {
-        if (transaction < 0) {
-            return this.rynek.getAverage();
-        }
         return this.rynek.getAverage();
-    }
-    public double getPlazaAverage(int transaction){
-        return this.plaza.getAverage();
-    }
-    public double getFocusAverage(){
-        return this.focus.getAverage();
     }
     public void payments(){
         for (int i = 0; i < 0; i++){

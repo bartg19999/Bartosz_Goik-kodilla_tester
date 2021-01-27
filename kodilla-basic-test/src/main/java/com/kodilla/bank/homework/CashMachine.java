@@ -4,10 +4,11 @@ public class CashMachine {
     public int[] transactions;
     public int size;
 
-    public CashMachine(){
+    public CashMachine() {
         this.size = 0;
         this.transactions = new int[0];
     }
+
     public void add(int transaction) {
         this.size++;
         int[] newTransaction = new int[this.size];
@@ -15,6 +16,7 @@ public class CashMachine {
         newTransaction[this.size - 1] = transaction;
         this.transactions = newTransaction;
     }
+
     public int[] getTransactions() {
         return transactions;
     }
@@ -23,21 +25,29 @@ public class CashMachine {
         return this.size;
     }
 
-    public int getBalance(){
+    public int getBalance() {
         int sum = 0;
-        for (int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             sum += this.transactions[i];
         }
         return sum;
     }
+
     public double getAverage() {
-        if (this.transactions.length == 0){
+        if (this.transactions.length == 0) {
             return 0;
         }
         double sum = 0;
         for (int i = 0; i < this.transactions.length; i++) {
             sum += this.transactions[i];
         }
-        return sum/this.transactions.length;
+        return sum / this.transactions.length;
+    }
+
+    public double getDepositAverage() {
+        double sum = 0;
+        for (int i = 0; i < this.transactions.length; i++){
+            sum += this.transactions
+        }
     }
 }

@@ -1,18 +1,32 @@
 package com.kodilla.collections.adv.exercises.homework;
 
-
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class FlightFinder {
-    Map<String, List<Flight>> flights = new HashMap<>();
 
-    public List<Flight> findFlightsFrom(String departure){
-        return flights.getOrDefault(departure, Collections.emptyList());
+    private List<Flight> flights = FlightRepository.getFlightsTable();
+
+    public static List<Flight> findFlightsFrom(String searchedDeparture){
+        List<Flight> departures = new ArrayList<>();
+        for (Flight departure : FlightRepository.getFlightsTable()){
+            if(FlightRepository.getFlightsTable().equals(searchedDeparture)){
+                departures.add(new Flight(Flight.departure, Flight.arrival));
+            }else {
+                System.out.println("Flight not found.");
+            }
+        }
+        return departures;
     }
-    public List<Flight> findFlightsTo(String arrival){
-        return flights.getOrDefault(arrival, Collections.emptyList());
+    public static List<Flight> findFlightsTo(String searchedArrival){
+        List<Flight> arrivals = new ArrayList<>();
+        for (Flight arrival : FlightRepository.getFlightsTable()){
+            if (FlightRepository.getFlightsTable().equals(searchedArrival)){
+                arrivals.add(new Flight(Flight.departure, Flight.arrival));
+            }else{
+                System.out.println("Flight not found");
+            }
+        }
+        return arrivals;
     }
 }
