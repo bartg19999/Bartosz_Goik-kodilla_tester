@@ -1,32 +1,28 @@
 package com.kodilla.bank.homework;
 
 public class Bank {
-    private CashMachine rynek;
-    private CashMachine plaza;
-    private CashMachine focus;
+    public CashMachine[] cashmachines;
 
-    public Bank(){
-        this.rynek = new CashMachine();
-        this.plaza = new CashMachine();
-        this.focus = new CashMachine();
-    }
-    public void addRynekTransaction(int transaction){
-        this.rynek.add(transaction);
-    }
-    public void getRynekDepositsNumber(int transaction)
-    public void addPlazaTransaction(int transaction){
-        this.plaza.add(transaction);
-    }
-    public void addFocusTransaction(int transaction){
-        this.focus.add(transaction);
+    public Bank(CashMachine cashMachine){
+        this.cashmachines = new CashMachine[0];
     }
 
-    public double getRynekAverageDeposit(int transaction) {
-        return this.rynek.getAverage();
+    public CashMachine[] getCashmachines() {
+        return cashmachines;
     }
+
+    public int allCashMachinesBalance(CashMachine cashMachine){
+        int sum = 0;
+        for (int i = 0; i < cashmachines.length; i++){
+            sum += getCashmachines().length
+        }
+        return
+    }
+
     public void payments(){
+        int sum = 0;
         for (int i = 0; i < 0; i++){
-            System.out.println(i);
+            sum += this.cashmachines[i];
         }
     }
     public void deposits(){

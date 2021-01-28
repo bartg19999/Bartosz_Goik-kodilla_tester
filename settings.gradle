@@ -18,4 +18,8 @@ include 'Zadanie2.7'
 include 'Zadanie2.8'
 include 'Kodilla2'
 include 'kodilla-basic-test'
+include 'kodilla-collections'
+include 'kodilla-collections-advanced'
+include 'kodilla-stream'
+include 'kodilla-advenced-tests'
 

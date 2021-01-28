@@ -43,11 +43,4 @@ public class CashMachine {
         }
         return sum / this.transactions.length;
     }
-
-    public double getDepositAverage() {
-        double sum = 0;
-        for (int i = 0; i < this.transactions.length; i++){
-            sum += this.transactions
-        }
-    }
 }
