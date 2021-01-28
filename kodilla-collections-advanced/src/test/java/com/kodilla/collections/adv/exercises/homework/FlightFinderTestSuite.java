@@ -10,25 +10,28 @@ import static org.junit.jupiter.api.Assertions.*;
 class FlightFinderTestSuite {
 
     @Test
-    public void testFindFlightsFrom(String departure){
+    public void testFindFlightsFrom(){
         //given
-        FlightRepository
+        FlightRepository flightRepository = new FlightRepository();
+        Flight flight = new Flight("Warsaw", "London");
         //when
         List<Flight> result = FlightFinder.findFlightsFrom("Warsaw");
         //then
         List<Flight> expectedDepartures = new ArrayList<>();
         expectedDepartures.add(new Flight("Warsaw", "Helsinki"));
-        expectedDepartures.add(new Flight("Warsaw", "London"));
-        assertEquals(2, result.size());
+        assertEquals("Warsaw", Flight.getDeparture());
     }
     @Test
-    public void testFindFlightsTo(String arrival){
+    public void testFindFlightsTo(){
+        //when
+        FlightRepository flightRepository = new FlightRepository();
+        Flight flight = new Flight("Warsaw", "Helsinki");
         //when
         List<Flight> result = FlightFinder.findFlightsTo("Helsinki");
         //then
         List<Flight> expectedArrivals = new ArrayList<>();
         expectedArrivals.add(new Flight("Warsaw", "Helsinki"));
-        assertEquals(1, result.size());
+        assertEquals("Helsinki", Flight.getArrival());
 
     }
 }

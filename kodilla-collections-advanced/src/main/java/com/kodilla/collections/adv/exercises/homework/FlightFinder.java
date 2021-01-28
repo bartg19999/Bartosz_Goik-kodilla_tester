@@ -8,8 +8,8 @@ public class FlightFinder {
     public static List<Flight> findFlightsFrom(String searchedDeparture){
         List<Flight> departures = new ArrayList<>();
         for (Flight departure : FlightRepository.getFlightsTable()){
-            if(FlightRepository.getFlightsTable().equals(searchedDeparture)){
-                departures.add(new Flight(Flight.departure, Flight.arrival));
+            if(departure.equals(searchedDeparture)){
+                System.out.println("This flight exists");;
             }else {
                 System.out.println("Flight not found.");
             }
@@ -19,8 +19,8 @@ public class FlightFinder {
     public static List<Flight> findFlightsTo(String searchedArrival){
         List<Flight> arrivals = new ArrayList<>();
         for (Flight arrival : FlightRepository.getFlightsTable()){
-            if (FlightRepository.getFlightsTable().equals(searchedArrival)){
-                arrivals.add(new Flight(Flight.departure, Flight.arrival));
+            if (arrival.equals(searchedArrival)){
+                System.out.println("This flight exists");;
             }else{
                 System.out.println("Flight not found");
             }
